@@ -1,0 +1,22 @@
+{
+  "name": "instagram",
+  "version": "1.0.0",
+  "description": "Реализовать веб-приложение, аналог [Instagram](https://www.instagram.com/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "server": "nodemon server.js",
+    "start": "concurrently - kill-others \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.6.0"
+  }
+}
