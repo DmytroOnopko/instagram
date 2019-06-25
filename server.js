@@ -6,13 +6,13 @@ const mongoose = require('mongoose');
 const { PORT, MONGODB_URL} = require('./config');
 
 //ROUTS
-const auth = require('./src/routs/auth');
-const posts = require('./src/routs/posts');
-const detailPost = require('./src/routs/detailPost');
-const profile = require('./src/routs/profile');
-const addComment = require('./src/routs/api/addComment');
-const addPost = require('./src/routs/api/addPost');
-const addUser = require('./src/routs/api/addUser');
+const auth = require('./src/routes/auth');
+const posts = require('./src/routes/posts');
+const detailPost = require('./src/routes/detailPost');
+const profile = require('./src/routes/profile');
+const addComment = require('./src/routes/api/addComment');
+const addPost = require('./src/routes/api/addPost');
+const addUser = require('./src/routes/api/addUser');
 
 const app = express();
 
