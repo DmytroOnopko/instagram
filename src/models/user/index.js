@@ -8,7 +8,7 @@ const User = mongoose.model('User', new Schema({
     password:          { type: String, required: true },
     img_url:           { type: String, required: true },
     subscribers_id:   [{ type: String, default:'' }],
-    subscribed_to_id: [{ type: String, default:'' }]
+    follow_id: [{ type: String, default:'' }]
 }));
 
 module.exports = User;
